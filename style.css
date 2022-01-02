@@ -1,0 +1,442 @@
+
+/*------------ RESET CSS ----------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ----- NavBar ----- */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: #ded6c0;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: #d03b40;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    transition: all 0.7s;
+    
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.7s;
+}
+
+.nav-menu li a{
+    color: #ded6c0;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    font-weight: 600
+}
+
+
+#check {
+    display: none;
+
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+    
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+/* ----- Landing ----- */
+
+.landing-page {
+
+    color: #f5f0ed;
+    padding: 10px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.landing-page h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.landing-page p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 50px;
+}
+
+.landing-hr {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ded6c0;
+}
+
+/* ----- reservas-page ----- */
+
+.brunch {
+    min-height: 34vh;
+    background-color: #d03b40;
+    background-size: cover;
+    color: #ded6c0;
+    padding: 10px;
+}
+
+.brunch h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.brunch p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.fiestas {
+    min-height: 34vh;
+    background-color: #ded6c0;
+    background-size: cover;
+    color: #d03b40;
+    padding: 10px;
+}
+
+.fiestas h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.fiestas p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.desayuno {
+    background-image: url(img/Fondo2.jpg);
+    background-size: cover;
+    color: #f5f0ed;
+    padding: 10px;
+    height: 34vh;
+}
+
+.desayuno h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.desayuno p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.desayuno a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #f5f0ed;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #f5f0ed;
+    display: block;
+}
+
+/* ----- productos-page ----- */
+
+.producto {
+    background-color: #f5f0ed;
+    background-size: cover;
+    padding: 10px;
+}
+
+.producto img {
+    margin: auto;
+    display: block;
+    width: 40%;
+}
+
+.producto h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    color: #241d1b;
+}
+
+.producto p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* ----- contacto ----- */
+.contacto {
+    height: 50vh;
+    background-color: #ded6c0;
+    background-size: cover;
+    color: #d03b40;
+    padding: 10px;
+}
+
+.contacto h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contacto p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contacto a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #d03b40;
+    text-decoration: none;
+}
+
+.direccion {
+    height: 50vh;
+    background-color: #d03b40;
+    background-size: cover;
+    color: #ded6c0;
+    padding: 10px;
+}
+
+.direccion h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.direccion p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* RESPONSIVE FOR DESKTOP --------------*/
+
+
+@media screen and (min-width: 880px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* DESKTOP MENU */
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+
+        /*PARA QUE EL MENU SE ALINEE A LA DERECHA Y AL CENTRO - NO OLVIDAR EL PADDING EN LOS LINKS*/
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin-left:0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .landing-page h1 {
+        font-size: 44px;
+        margin-bottom: 30px;
+    }
+
+    /* reservas */
+
+    .brunch {
+        float: left;
+        width: 50%;
+        height: 50vh;
+    }
+
+    .fiestas {
+        float: right;
+        width: 50%;
+        height: 50vh;
+    }
+
+    .desayuno {
+        float: left;
+        width: 100%;
+        height: 50vh;
+    }
+
+    /* productos */
+
+    .producto {
+        float: left;
+        width: 50%;
+    }
+
+    .producto img {
+        max-width: 20%;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .producto h2 {
+        text-align: left;
+        font-size: 18px;
+
+    }
+
+    .producto p {
+        text-align: left;
+        font-size: 9px;
+    }
+
+    /* contacto */
+    .contacto {
+        float: left;
+        width: 50%;
+    }
+
+    .direccion {
+        float: right;
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .producto h2 {
+        font-size: 22px;
+
+    }
+
+    .producto p {
+        font-size: 14px;
+    }
+}
+
+
