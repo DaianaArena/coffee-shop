@@ -85,7 +85,7 @@ nav {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     transition: all 0.7s;
-    
+
 }
 
 .nav-menu li {
@@ -111,7 +111,7 @@ nav {
 
 #check:checked ~ .nav-menu {
     height: 100vh;
-    
+
 }
 
 #check:checked ~ .nav-menu li {
@@ -126,6 +126,10 @@ nav {
     padding: 10px;
     margin-top: 150px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .landing-page h1 {
@@ -155,7 +159,11 @@ nav {
     background-color: #d03b40;
     background-size: cover;
     color: #ded6c0;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .brunch h2 {
@@ -163,7 +171,6 @@ nav {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    padding-top: 40px;
 }
 
 .brunch p {
@@ -177,7 +184,10 @@ nav {
     background-color: #ded6c0;
     background-size: cover;
     color: #d03b40;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .fiestas h2 {
@@ -185,7 +195,7 @@ nav {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    padding-top: 40px;
+
 }
 
 .fiestas p {
@@ -198,8 +208,11 @@ nav {
     background-image: url(img/Fondo2.jpg);
     background-size: cover;
     color: #f5f0ed;
-    padding: 10px;
     height: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .desayuno h2 {
@@ -207,15 +220,14 @@ nav {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    padding-top: 40px;
+
 }
 
 .desayuno p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     text-align: center;
-    padding: 5px;
-    margin-bottom: 10px;
+
 }
 
 .desayuno a {
@@ -236,6 +248,9 @@ nav {
     background-color: #f5f0ed;
     background-size: cover;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .producto img {
@@ -267,7 +282,10 @@ nav {
     background-color: #ded6c0;
     background-size: cover;
     color: #d03b40;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contacto h2 {
@@ -275,7 +293,7 @@ nav {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    padding-top: 100px;
+
 }
 
 .contacto p {
@@ -298,7 +316,10 @@ nav {
     background-color: #d03b40;
     background-size: cover;
     color: #ded6c0;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .direccion h2 {
@@ -306,7 +327,7 @@ nav {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    padding-top: 100px;
+
 }
 
 .direccion p {
@@ -438,5 +459,3 @@ nav {
         font-size: 14px;
     }
 }
-
-
