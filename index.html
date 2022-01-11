@@ -12,6 +12,7 @@
 
         <!--TITULO -->
         <title>Cafe Oslo</title>
+        <link rel="shortcut icon" href="http://steam.coffee/wp-content/uploads/2017/11/cropped-favicon.png">
 
         <!--FONTS -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +32,7 @@
 
             <!--LOGO-->
             <div class="nav-bar">
-                <img src="img/Logo.png" alt="Logo" class="logo">
+                <img src="img/logo.png" alt="Logo" class="logo">
             </div>
 
             <!--BTN-->
@@ -43,10 +44,10 @@
             <!--LINKS-->
             <ul class="nav-menu">
                 <li><a onclick="closeMenu();" href="#landing-page">ESPACIO</a></li>
-                <li><a onclick="closeMenu();" href="#productos-page">PRODUCTOS</a></li>
+                <li><a onclick="closeMenu();" href="#productos">PRODUCTOS</a></li>
                 <li><a onclick="closeMenu();" href="#">OFERTAS</a></li>
-                <li><a onclick="closeMenu();" href="#reservas-page">RESERVAS</a></li>
-                <li><a onclick="closeMenu();" href="#contacto-page">CONTACTO</a></li>
+                <li><a onclick="closeMenu();" href="#reservas">RESERVAS</a></li>
+                <li><a onclick="closeMenu();" href="#contacto">CONTACTO</a></li>
             </ul>
             </nav>
 
@@ -60,7 +61,7 @@
 
 
         <div class="reservas-page" id="reservas-page">
-            <div class="brunch">
+            <div class="brunch" id="reservas">
                 <h2>VEN AL BRUNCH DE LOS DOMINGOS</h2>
                 <p>Sesame snaps icing chocolate bar. i love donut powder seame snaps. Jelly-o topping caramels. Sugar plum I love gummi bears.</p>
             </div>
@@ -73,14 +74,14 @@
             <div class="desayuno">
                 <h2>VEN A DESAYUNAR</h2>
                 <p>Bonbon topping I love sweet roll i love candy icing chocolate jelly. Pie souffle sweet.Apple pie bonbon caramels powder.</p>
-                <a href="#">DESCUBRE NUESTROS PRODUCTOS</a>
+                <a href="#productos">DESCUBRE NUESTROS PRODUCTOS</a>
             </div>
 
         </div>
 
         <div class="productos-page" id="productos-page">
 
-            <div class="producto">
+            <div class="producto" id="productos">
                 <img src="img/Icono1.png" alt="Productos">
                 <div class="producto-info">
                     <h2>PAN RECIÉN HECHO</h2>
@@ -116,7 +117,7 @@
         </div>
 
         <div class="contacto-page" id="contacto-page">
-            <div class="contacto">
+            <div class="contacto" id="contacto">
                 <h2>CONTACTA CON NOSOTROS</h2>
                 <p>Si quieres hacer una reserva, tienes alguna sugerencia o simplemente quieres saludar, escríbenos a:<a href="mailto:cafeoslo@cafeoslo.es">cafeoslo@cafeoslo.es</a> </p>
             </div>
